@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+.outer-div{
+height:600px;
+width:1000px;
+border:none;
+display:flex;
+margin:auto;
+margin-top:30px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+}
+.d1{
+
+height:600px;
+width:400px;
+
+}
+.d2{
+height:600px;
+width:500px;
+
+}
+
+.image-div{
+height:400px;
+
+background-image:url(ofi.jpeg);
+background-size:cover;
+background-position:center;
+
+}
+
+.Info-div{
+height:180px;
+background-color:orange;
+}
+
+hr{
+height:4px;
+width:90px;
+background-color:blue;
+border-radius:18px;
+margin-left:40px;
+}
+
+.form-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding: 30px 50px;
+}
+
+
+
+label{
+margin-bottom:8px;
+font-weight:500;
+font-family:'Poppins',sans-serif;
+}
+
+input{
+ padding:12px;
+ border:1px solid #ddd;
+ border-radius:8px;
+ outline:none;
+ width:500px;
+
+}
+
+ input:focus{
+border:1px solid orange;
+
+}
+
+
+
+
+
+
+.highlight a{
+color:orange;
+font-weight:bold;
+text-decoration:none;
+
+
+}
+
+.btn{
+width:480px;
+height:40px;
+background-color:orange;
+color:white;
+margin-left:20px;
+grid-column:1/3;
+margin-top:50px;
+}
+.btn:hover{
+background-color:#FFAE6E;
+}
+</style>
+</head>
+<body>
+<div class="outer-div">
+<div class="d1">
+<div class="image-div"></div>
+<div class="Info-div">
+<h1 style="color:white; font-family:'lora',sans-serif; font-weight:bold; margin-left:40px;">Welcome Back!</h1>
+<hr>
+<p style="color:white; font-family:'Poppins',sans-serif;  margin-left:30px; margin-right:30px;">Login to your HR account and manage your employees,attendance,payroll and much more</p>
+</div>
+
+</div>
+<div class="d2">
+
+<h2 style="margin-left:50px; font-family:'lora',sans-serif; font-weight:bold; margin-top:30px; ">Login to HR Account</h2>
+<p style="margin-left:50px; font-family:'Poppins',sans-serif; font-weight:bold; color:grey; margin-top:20px;">Welcome back! Please login to continue</p>
+<form action="Login" method="post" class=form-box autocomplete="off">
+
+
+
+<label>Email Address</label><br>
+<input type="email" placeholder="Enter Email Address"  name="email" autocomplete="off" required><br>
+
+
+
+<label>Password</label><br>
+<input type="password" placeholder="Enter Password" name="pass" autocomplete="new-password"><br>
+
+
+
+
+<button class="btn" type="submit">Login</button>
+
+
+</form>
+<p style="margin-left:200px;">Don't have an account? <span class="highlight"><a href="Registration.html">Register here</a></span></p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
